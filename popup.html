@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>Ofuscador</title>
+<script type="text/javascript" src="ofuscator.js"></script>
+<style>
+    body{
+      overflow: hidden;
+      margin: 10px;
+      background-color: #FF99FD;
+      font-family: 'Lato', sans-serif;
+    }
+    .container{
+      width:220px;
+      line-height: 25px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div><h1>Ofuscador:</h1></div>
+            <div>
+                <form name="form" action="" method="get">
+                    <input id="obfuscateValue" type="text" placeholder="Valor a Ofuscar">
+                    <button id="botonOfuscar">Enviar</button>
+                    <input id="undofuscateValue" type="text" placeholder="Valor a Desofuscar">
+                    <button id="botonDesofuscar">Enviar</button><br>
+                    <button id="clean">Limpiar</button><br>
+                </form>          
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

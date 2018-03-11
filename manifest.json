@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Ofuscador",
+  "short_name": "Ofuscador",
+  "description": "Ofuscar un valor                              |                     Author: Moises Ruiz Diaz",
+  "version": "1.0",
+  "minimum_chrome_version": "38",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons" :  {  "16" :  "icono.png" ,
+		   "48" :  "icono.png" ,
+		  "128" :  "icono.png"  },
+  "browser_action": {
+    "default_icon": "icono.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js","ofuscator.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
